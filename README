@@ -1,0 +1,21 @@
+UT804 digital multimeter manufactured by UNI-T Group Limited. Model UT804 has
+RS232 interface that allows to recieve measurment results. Software provided by
+manufacturer works only with microsoft based operating systems, so I prepare
+simple program for linux users. Most protocol reengineerd was done thanks to
+UT804.LOG I found in the Internet (no link, sorry). 
+
+
+Program description and usage	
+
+	Download, untar and compile code:
+ 		#gcc ut804_logger_latest.c -o ut804_logger  
+		
+
+	Familiarize yourself with program options.
+ 		#./ut804_logger -h 
+		
+
+	Run program with choosen options. Make sure front pannel button [SEND]
+	is activated.
+ 		#./ut804_logger -d /dev/ttyUSB0 
+		
